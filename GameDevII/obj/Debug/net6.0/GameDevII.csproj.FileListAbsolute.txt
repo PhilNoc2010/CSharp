@@ -1,0 +1,15 @@
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\bin\Debug\net6.0\GameDevII.exe
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\bin\Debug\net6.0\GameDevII.deps.json
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\bin\Debug\net6.0\GameDevII.runtimeconfig.json
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\bin\Debug\net6.0\GameDevII.dll
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\bin\Debug\net6.0\GameDevII.pdb
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\GameDevII.csproj.AssemblyReference.cache
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\GameDevII.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\GameDevII.AssemblyInfoInputs.cache
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\GameDevII.AssemblyInfo.cs
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\GameDevII.csproj.CoreCompileInputs.cache
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\GameDevII.dll
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\refint\GameDevII.dll
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\GameDevII.pdb
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\GameDevII.genruntimeconfig.cache
+C:\Users\nocer\Desktop\CodingDojo\c#\GameDevII\obj\Debug\net6.0\ref\GameDevII.dll
