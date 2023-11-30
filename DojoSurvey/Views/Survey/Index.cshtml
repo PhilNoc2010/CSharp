@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+
+<body>
+    <div class="border">
+        <form action="process" method="post">
+            <div class="tabledisplay">
+                <div class="somepadding tablerow">
+                    <Label for="name" htmlfor="name" class="somepadding tablecell">Your Name:</Label>
+                    <input class="somepadding tablecell" type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="somepadding tablerow">
+                    <Label class="somepadding tablecell" for="location" htmlfor="location">Dojo Location:</Label>
+                    <select class="somepadding tablecell" name="location" id="location">
+                        <option value="San Jose">San Jose</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Detroit">Detroit</option>
+                        <option value="New York">New York</option>
+                        <option value="Atlanta">Atlanta</option>
+                    </select>
+                </div>
+                <div class="somepadding tablerow">
+                    <Label class="somepadding tablecell" for="language" htmlfor="language">Favorite Language:</Label>
+                    <select class="somepadding tablecell" name="language" id="language">
+                        <option value="Java">Java</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="HTML+CSS">HTML+CSS</option>
+                        <option value="C#">C#</option>
+                        <option value="C++">C++</option>
+                        <option value="Visual Basic">Visual Basic</option>
+                        <option value="COBOL">COBOL</option>
+                    </select>
+                </div>
+            </div>
+            <div class="somepadding ">
+                <Label for="comments" htmlfor="comments">Comments (optional):</Label>
+                <textarea id="comments" name="comments" placeholder="Please share any thoughts you may have" rows="6" cols="80" maxlength="500"></textarea>
+            </div>
+            <div class="somepadding d-flex rightalign">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+.headline {
+    text-align: center;
+}
+.d-flex {
+    display: flex;
+}
+.smallimage {
+    width: 500px;
+}
+.supersmallimg {
+    width: 250px;
+    padding: 20px;
+}
+.somepadding {
+    padding: 20px 40px;
+}
+.border {
+    border: 2px solid black
+}
+.rightborder{
+    border-right: 2px solid black;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div class="nav"> @Html.ActionLink("Home","Index") | @Html.ActionLink("Projects","Projects") | Contact</div>
+    <h1>Contact Me</h1>
+    <form action="">
+        <div>
+            <label for="Name" htmlfor="Name">Name:</label>
+            <input type="text" name="Name" placeholder="Your Name" id="Name">
+        </div>
+        <div>
+            <label for="Email" htmlfor="Email">Email:</label>
+            <input type="text" name="Email" placeholder="Email Address" id="Email">
+        </div>
+        <div>
+            <label for="message" htmlfor="message">Your Message:</label>
+            <textarea placeholder="Your message here" name="message" id="message" rows="4" cols="40" maxlength="200"></textarea>
+        </div>
+        <input type="submit" value="Send Message">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.graytext{
+    color: gray;
+}
+.border {
+    margin: 5%;
+    border: 2px solid black;
+    padding: 50px;
+}
+.somepadding {
+    padding: 5px
+}
+.tabledisplay{
+    display: table;
+}
+.tablerow{
+    display: table-row;
+}
+.tablecell{
+    display: table-cell;
+}
+.rightalign{
+    justify-content: right;
+}
+.d-flex{
+    display: flex;
+}

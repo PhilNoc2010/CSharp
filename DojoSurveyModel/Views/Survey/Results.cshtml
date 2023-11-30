@@ -1,0 +1,21 @@
+@model Survey
+
+<div class="border">
+        <h1>Submitted Info</h1>
+        <div class="tabledisplay">
+            <p>Name: @Model.Name</p>
+            <p>Dojo Location: @Model.Location</p>
+            <p>Favorite Language: @Model.Language</p>
+        </div>
+            @if (@Model.Comments == null)
+            {
+                <p>Comment (optional): <span class="graytext">No Comment</span></p>
+            }
+            else
+            {
+                <p>Comment (optional): @Model.Comments</p>
+            }
+            <form action="index" method="get" class="d-flex rightalign">
+                <input type="submit" value="Go Back">
+            </form>
+    </div>

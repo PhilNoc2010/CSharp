@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <div class="border">
+        <h1>Submitted Info</h1>
+        <div class="tabledisplay">
+            <p>Name: @ViewBag.name</p>
+            <p>Dojo Location: @ViewBag.location</p>
+            <p>Favorite Language: @ViewBag.language</p>
+        </div>
+            @if (ViewBag.comments == null)
+            {
+                <p>Comment (optional): <span class="graytext">No Comment</span></p>
+            }
+            else
+            {
+                <p>Comment (optional): @ViewBag.comments</p>
+            }
+            <form action="index" method="get" class="d-flex rightalign">
+                <input type="submit" value="Go Back">
+            </form>
+
+    </div>
+</body>
+</html>
