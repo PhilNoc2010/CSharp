@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h1>Hello @Context.Session.GetString("UserName")</h1>
+<h2> Click the boxes below to manipulate the value shown here </h2>
+<h2> @Context.Session.GetInt32("PageValue")</h2>
+
+<div class="d-flex">
+    <a asp-action="Add1"><div class="boxsize orangebox" > + 1 </div></a>
+    <a asp-action="Sub1"><div class="boxsize bluebox"> - 1 </div></a>
+</div>
+<div class="d-flex">
+    <a asp-action="Multiply"><div class="boxsize redbox"> X2 </div></a>
+    <a asp-action="AddRandom"><div class="boxsize greenbox"> + Random</div></a>
+</div>
+
+<form asp-action="Logout" method="post">
+    <input type="submit" value="Logout">
+</form>

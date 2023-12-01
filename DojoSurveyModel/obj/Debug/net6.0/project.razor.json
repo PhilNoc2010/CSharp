@@ -18374,6 +18374,11 @@
   "RootNamespace": "DojoSurveyModel",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\nocer\\Desktop\\CodingDojo\\c#\\DojoSurveyModel\\Views\\Home\\Results.cshtml",
+      "TargetPath": "Views\\Home\\Results.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nocer\\Desktop\\CodingDojo\\c#\\DojoSurveyModel\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -18396,11 +18401,6 @@
     {
       "FilePath": "c:\\Users\\nocer\\Desktop\\CodingDojo\\c#\\DojoSurveyModel\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\nocer\\Desktop\\CodingDojo\\c#\\DojoSurveyModel\\Views\\Survey\\Results.cshtml",
-      "TargetPath": "Views\\Survey\\Results.cshtml",
       "FileKind": "mvc"
     },
     {

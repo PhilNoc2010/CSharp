@@ -29,8 +29,9 @@ class Enemy
         Attack attack = AttackList[rand.Next(0,AttackList.Count)];
         Console.WriteLine($"The {this.Name} used {attack.Name} for {attack.DamageAmount} damage.");
     }
-    public virtual void PerformAttack(Enemy Target, Attack ChosenAttack)
+    public virtual void PerformAttack(Enemy Target, string AttackName)
     {
+        Attack? ChosenAttack = AttackList.Find(a => a.Name == AttackName);
         Target.Health = Target.Health - ChosenAttack.DamageAmount;
         Console.WriteLine($"{Name} attacks {Target.Name} using {ChosenAttack.Name}, dealing {ChosenAttack.DamageAmount} damage and reducing {Target.Name}'s health to {Target.Health}!!");
     }

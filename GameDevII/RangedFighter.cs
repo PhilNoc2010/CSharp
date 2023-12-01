@@ -10,11 +10,12 @@ class RangedFighter : Enemy
         AttackList.Add(ShootArrow);
         AttackList.Add(ThrowKnife);
     }
-    public override void PerformAttack(Enemy Target, Attack ChosenAttack)
+    public override void PerformAttack(Enemy Target, string AttackName)
     {
+        Attack? ChosenAttack = AttackList.Find(a => a.Name == AttackName);
         if (Distance > 10)
         {
-            base.PerformAttack(Target, ChosenAttack);
+            base.PerformAttack(Target, AttackName);
         }
         else
         {

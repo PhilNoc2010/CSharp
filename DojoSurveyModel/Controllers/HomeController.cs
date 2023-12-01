@@ -14,10 +14,36 @@ public class HomeController : Controller
     }
 
     [HttpGet]
+    [Route("")]
     [Route("index")]
     public IActionResult Index()
     {
         return View();
+    }
+
+    [HttpGet]
+    [Route("results")]
+    public ViewResult ShowResults()
+    {
+        return View("Results");
+    }
+
+    [HttpPost]
+    [Route("process")]
+    public IActionResult Results(Survey results)
+    {
+        Console.WriteLine($"Name: {results.Name}");
+        Console.WriteLine($"Location: {results.Location}");
+        Console.WriteLine($"Language: {results.Language}");
+        Console.WriteLine($"Comments: {results.Comments}");
+        if(ModelState.IsValid)
+        {
+            return View(results);
+        }
+        else
+        {
+            return View("index");
+        }
     }
 
     public IActionResult Privacy()

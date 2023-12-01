@@ -15,8 +15,5 @@ class MagicCaster : Enemy
         Target._Health = Target._Health + 40;
         Console.WriteLine($"{Target.Name} now has {Target._Health} Health.");
     }
-    public override void PerformAttack(Enemy Target, Attack ChosenAttack)
-    {
-        base.PerformAttack(Target, ChosenAttack);
-    }
+
 }

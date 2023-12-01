@@ -1,18 +1,21 @@
-﻿@{
+﻿@model Survey
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+<div>
     <div class="border">
         <form action="process" method="post">
             <div class="tabledisplay">
                 <div class="somepadding tablerow">
-                    <Label for="name" htmlfor="name" class="somepadding tablecell">Your Name:</Label>
-                    <input class="somepadding tablecell" type="text" name="Name" id="name" placeholder="Your Name">
+                    <Label asp-for="Name" class="somepadding tablecell">Your Name:</Label>
+                    <span asp-validation-for="Name"></span>
+                    <input asp-for="Name" class="somepadding tablecell" type="text" id="name" placeholder="Your Name">
                 </div>
                 <div class="somepadding tablerow">
-                    <Label class="somepadding tablecell" for="location" htmlfor="location">Dojo Location:</Label>
-                    <select class="somepadding tablecell" name="Location" id="location">
+                    <Label class="somepadding tablecell" asp-for="Location" htmlfor="location">Dojo Location:</Label>
+                    <span asp-validation-for="Location"></span>
+                    <select class="somepadding tablecell" asp-for="Location" id="location">
                         <option value="San Jose">San Jose</option>
                         <option value="San Francisco">San Francisco</option>
                         <option value="Chicago">Chicago</option>
@@ -22,8 +25,9 @@
                     </select>
                 </div>
                 <div class="somepadding tablerow">
-                    <Label class="somepadding tablecell" for="language" htmlfor="language">Favorite Language:</Label>
-                    <select class="somepadding tablecell" name="Language" id="language">
+                    <Label class="somepadding tablecell" asp-for="Language" htmlfor="language">Favorite Language:</Label>
+                    <span asp-validation-for="Language"></span>
+                    <select class="somepadding tablecell" asp-for="Language" id="language">
                         <option value="Java">Java</option>
                         <option value="Javascript">Javascript</option>
                         <option value="HTML+CSS">HTML+CSS</option>
@@ -35,8 +39,9 @@
                 </div>
             </div>
             <div class="somepadding ">
-                <Label for="comments" htmlfor="comments">Comments (optional):</Label>
-                <textarea id="comments" name="Comments" placeholder="Please share any thoughts you may have" rows="6"
+                <Label asp-for="Comments" htmlfor="comments">Comments (optional):</Label>
+                <span asp-validation-for="Comments"></span>
+                <textarea id="comments" asp-for="Comments" placeholder="Please share any thoughts you may have" rows="6"
                     cols="80" maxlength="500"></textarea>
             </div>
             <div class="somepadding d-flex rightalign">
@@ -44,6 +49,4 @@
             </div>
         </form>
     </div>
-
-
 </div>
