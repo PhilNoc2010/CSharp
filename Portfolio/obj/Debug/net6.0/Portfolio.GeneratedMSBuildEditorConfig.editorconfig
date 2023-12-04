@@ -8,21 +8,21 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Portfolio
 build_property.RootNamespace = Portfolio
-build_property.ProjectDir = C:\Users\nocer\Desktop\CodingDojo\c#\Portfolio\
+build_property.ProjectDir = c:\Users\nocer\Desktop\CodingDojo\C#\Portfolio\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\nocer\Desktop\CodingDojo\c#\Portfolio
+build_property.MSBuildProjectDirectory = c:\Users\nocer\Desktop\CodingDojo\C#\Portfolio
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/Portfolio/Views/Hello/Contact.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/Portfolio/Views/Hello/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/Portfolio/Views/Hello/Index.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/Portfolio/Views/Hello/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/Portfolio/Views/Hello/Projects.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/Portfolio/Views/Hello/Projects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cUHJvamVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
