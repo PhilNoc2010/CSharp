@@ -1,0 +1,50 @@
+@model Dish
+@{
+    ViewData["Title"] = "Make @Model.Name Even More Delicious";
+}
+
+<div class="text-center">
+    <h1>Update this Dish!</h1>
+    <p><a asp-action="Index" asp-controller="Home">Home</a> | <a asp-action="NewDish" asp-controller="Dish">Add a Dish</a> </p>
+</div>
+
+<Form asp-action="UpdateDish" asp-asp-controller="Dish" asp-route-dishID="@Model.DishID" method="post">
+    <div class="d-flex justify-content-evenly">
+        <div>
+            <div>
+                <label for="Chef" htmlfor="chef">Chef's Name:</label>
+                <span asp-validation-for="Chef" class="text-danger"></span>
+                <input type="text" id="chef" name="Chef" placeholder="Chef's Name" value="@Model.Chef">
+            </div>
+            <div>
+                <label for="Name" htmlfor="name">Name of Dish:</label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <input type="text" id="name" name="Name" placeholder="Name of Dish" value="@Model.Name">
+            </div>
+            <div>
+                <label for="Calories" htmlfor="calories">Number of Calories:</label>
+                <span asp-validation-for="Calories" class="text-danger"></span>
+                <input type="number" id="calories" name="Calories" placeholder="100" value="@Model.Calories">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="Tastiness" htmlfor="tastiness">Tastiness:</label>
+                <select name="Tastiness" asp-for=@Model.Tastiness>
+                    @for(int i=1; i < 6; i++)
+                    {
+                        <option value=@i>@i</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="text-end p-3">
+            <div>
+                <label for="Description" htmlfor="description">Description:</label>
+                <span asp-validation-for="Description" class="text-danger"></span>
+                <textarea name="Description" maxlength="200" id="description" placeholder="Please describe your dish here" cols="30" rows="10">@Model.Description</textarea>
+            </div>
+            <input type="submit" value="Update Dish">
+        </div>
+    </div>
+</Form>
