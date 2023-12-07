@@ -14,9 +14,11 @@
 <p>Calories: @Model.Calories</p>
 <p>Tastiness: @Model.Tastiness</p>
 
-<form asp-action="DeleteDish" asp-controller="Dish" asp-route-dishID="@Model.DishID" method="post">
-    <input type="submit" value="Delete Dish">
-</form>
-<form asp-action="ShowEditDish" asp-controller="Dish" asp-route-dishID="@Model.DishID" method="post">
-    <input type="submit" value="Edit Dish">
-</form>
+<div class="d-flex justify-content-evenly">
+    <form asp-action="DeleteDish" asp-controller="Dish" asp-route-dishID="@Model.DishID" method="post" class="btn bg-danger">
+        <input type="submit" value="Delete Dish">
+    </form>
+    <form asp-action="ShowEditDish" asp-controller="Dish" asp-route-dishID="@Model.DishID" method="post" class="btn bg-primary">
+        <input type="submit" value="Edit Dish">
+    </form>
+</div>
