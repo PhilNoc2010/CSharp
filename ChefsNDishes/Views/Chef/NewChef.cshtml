@@ -1,0 +1,25 @@
+@model Chef
+
+<a asp-action="Index" asp-controller="Home">Chefs</a> | <a asp-action="Dishes" asp-controller="Home">Dishes</a>  | New Chef | <a asp-action="NewDish" asp-controller="Dish">Add Dish</a>
+<h1>Add a New Chef</h1>
+<hr>
+<div>
+    <form asp-action="AddChef" asp-controller="Chef">
+        <div>
+            <label asp-for="FirstName">First Name:</label>
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+            <input asp-for="FirstName">
+        </div>
+        <div>
+            <label asp-for="LastName">Last Name:</label>
+            <span asp-validation-for="LastName" class="text-danger"></span>
+            <input asp-for="LastName">
+        </div>
+        <div>
+            <label asp-for="DateOfBirth">Date of Birth:</label>
+            <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            <input asp-for="DateOfBirth">
+        </div>
+        <input type="submit" value="Add Chef">
+    </form>
+</div>
