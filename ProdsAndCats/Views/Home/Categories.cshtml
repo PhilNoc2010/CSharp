@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Category Page";
+}
+@model List<Category>
+
+<h1 class="display-4 text-center">Welcome</h1>
+<h3 class="text-center"> <a asp-action="Index" asp-controller="Home">Products</a> | Categories </h3>
+<div class="text-center d-flex justify-content-evenly">
+    <div>
+        @await Html.PartialAsync("../Category/_AddCategory",new Category())
+    </div>
+    <div>
+        <h2> All Categories </h2>
+        @foreach (Category item in Model)
+        {
+            <li><a asp-action="GetCategory" asp-controller="Category" asp-route-catID=@item.CategoryID>@item.Name</a></li>
+        }
+    </div>
+</div>

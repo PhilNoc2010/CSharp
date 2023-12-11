@@ -1,0 +1,8 @@
+@{
+    ViewData["Title"] = "Product Information";
+}
+@model Product
+
+<h3 class="text-center"> <a asp-action="Index" asp-controller="Home">Products</a>| <a asp-action="CategoryPage" asp-controller="Home">Categories</a> </h3>
+
+<h1 class="display-4 text-center">@Model.Name</h1>
