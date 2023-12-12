@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Wedding
+
+<div class="d-flex justify-content-between">
+    <p>Welcome @Context.Session.GetString("UserName")</p>
+    <p>Home | <a asp-action="AddWedding" asp-controller="Wedding">Plan a Wedding</a> | <a asp-action="Logout" asp-controller="User">Logout</a></p>
+</div>
+
+<h1>@Model.WedderOne & @Model.WedderTwo Wedding</h1>
+<h3>Date: @Model.WeddingDate</h3>
+<h3>Location: @Model.WeddingAddress</h3>
+
+@await Html.PartialAsync("../Wedding/_GuestList", Model.WeddingGuestList)
+

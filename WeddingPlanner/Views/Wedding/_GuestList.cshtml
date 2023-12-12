@@ -1,0 +1,7 @@
+@model List<WeddingPlan>
+
+Guest List:
+@foreach (WeddingPlan wp in Model)
+{
+    <li>@wp.WeddingGuest.FirstName @wp.WeddingGuest.LastName</li>
+}

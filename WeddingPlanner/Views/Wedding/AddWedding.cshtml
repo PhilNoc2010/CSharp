@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Wedding
+
+<h1>Add Wedding Information</h1>
+<div class="d-flex justify-content-between">
+    <p>Welcome @Context.Session.GetString("UserName")</p>
+    <p><a asp-action="ShowWeddings" asp-controller="Wedding">Home</a> | Plan a Wedding | <a asp-action="Logout" asp-controller="User">Logout</a></p>
+</div>
+<form asp-action="MakeWedding" asp-controller="Wedding" method="post">
+    <div>
+        <Label asp-for="WedderOne"></Label>
+        <span asp-validation-for="WedderOne" class="text-danger"></span>
+        <input asp-for="WedderOne">
+    </div>
+    <div>
+        <Label asp-for="WedderTwo"></Label>
+        <span asp-validation-for="WedderTwo" class="text-danger"></span>
+        <input asp-for="WedderTwo">
+    </div>
+    <div>
+        <Label asp-for="WeddingDate"></Label>
+        <span asp-validation-for="WeddingDate" class="text-danger"></span>
+        <input asp-for="WeddingDate">
+    </div>
+    <div>
+        <Label asp-for="WeddingAddress"></Label>
+        <span asp-validation-for="WeddingAddress" class="text-danger"></span>
+        <input asp-for="WeddingAddress">
+    </div>
+    <input type="submit" value="Create Wedding">
+</form>

@@ -8,57 +8,57 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProdsAndCats
 build_property.RootNamespace = ProdsAndCats
-build_property.ProjectDir = C:\Users\nocer\Desktop\CodingDojo\c#\ProdsAndCats\
+build_property.ProjectDir = c:\Users\nocer\Desktop\CodingDojo\C#\ProdsAndCats\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\nocer\Desktop\CodingDojo\c#\ProdsAndCats
+build_property.MSBuildProjectDirectory = c:\Users\nocer\Desktop\CodingDojo\C#\ProdsAndCats
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Category/ShowCategory.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Category/ShowCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcU2hvd0NhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Category/_AddCategory.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Category/_AddCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcX0FkZENhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Home/Categories.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Home/Categories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Home/Index.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Home/Privacy.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Product/ShowProduct.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Product/ShowProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTaG93UHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Product/_AddProduct.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Product/_AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Shared/Error.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/_ViewImports.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/_ViewStart.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nocer/Desktop/CodingDojo/c\#/ProdsAndCats/Views/Shared/_Layout.cshtml]
+[c:/Users/nocer/Desktop/CodingDojo/C\#/ProdsAndCats/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-uz6gql70ap
