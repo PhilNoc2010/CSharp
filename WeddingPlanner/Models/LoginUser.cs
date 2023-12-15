@@ -10,5 +10,6 @@ public class LoginUser
     [Required(ErrorMessage ="Email Address is required")]
     public string LoginEmail { get; set; }
     [Required(ErrorMessage ="Password is Required")]
+    [DataType(DataType.Password)]
     public string LoginPassword { get; set; }
 }

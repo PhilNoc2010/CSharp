@@ -8,10 +8,11 @@
 <h1 class="display-4 text-center">@Model.Name</h1>
 
 <h4>Add Products to Category</h4>
+
 <form method="post" asp-action="AddToCategory" asp-controller="Category" asp-route-catID=@Model.CategoryID>
     <input type="hidden" asp-for="CategoryID" value=@Model.CategoryID>
     <select >
-        @foreach (Product product in ViewBag.AllProducts)
+        @foreach (Product product in Model.AssociatedProducts)
         {
             <option value=@product.ProductID>@product.Name</option>
         }

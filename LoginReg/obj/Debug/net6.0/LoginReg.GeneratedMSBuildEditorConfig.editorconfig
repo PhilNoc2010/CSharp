@@ -8,49 +8,49 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LoginReg
 build_property.RootNamespace = LoginReg
-build_property.ProjectDir = c:\Users\nocer\Desktop\CodingDojo\C#\LoginReg\
+build_property.ProjectDir = C:\Users\nocer\Desktop\CodingDojo\C#\LoginReg\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\nocer\Desktop\CodingDojo\C#\LoginReg
+build_property.MSBuildProjectDirectory = C:\Users\nocer\Desktop\CodingDojo\C#\LoginReg
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/Home/Privacy.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/Shared/Error.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/User/Index.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/User/Success.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/User/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/User/_Login.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/User/_Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/User/_Registration.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/User/_Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfUmVnaXN0cmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/_ViewImports.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/_ViewStart.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/Shared/_Layout.cshtml]
+[C:/Users/nocer/Desktop/CodingDojo/C\#/LoginReg/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-w81lvbtrrz

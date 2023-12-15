@@ -8,8 +8,7 @@ public class SessionCheckAttribute : ActionFilterAttribute
     public override void OnActionExecuting(ActionExecutingContext context)
     {
         // Find the session, but remember it may be null so we need int?
-        int? userId = context.HttpContext.Session.GetInt32("UserId");
-        Console.WriteLine($"\n\n\n validating {userId} in session \n\n\n");
+        int? userId = context.HttpContext.Session.GetInt32("UserID");
         // Check to see if we got back null
         if(userId == null)
         {

@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Account Information";
+}
+@model List<ActiveUserCoupon>
+
+<div>
+    <p><a asp-action="ShowCoupons" asp-controller="Coupon">Coupon Clipper</a>   | <a asp-action="AddCoupon" asp-controller="Coupon">Add Coupon</a> | Account Info </p>
+    <p> <a asp-action="Logout" asp-controller="User">Logout</a></p>
+</div>
+<h1>Account Information</h1>
+<h3>Username: @Context.Session.GetString("UserName")</h3>
+<h3>Email Address: @Context.Session.GetString("UserEmail")</h3>
+
+<p>Coupons Posted: @Model.Count(u => u.UserID == (int)Context.Session.GetInt32("UserID"))</p>
+
+<p>Number of Coupons you've used: @Model.Count(u => u.UserID == (int)Context.Session.GetInt32("UserID"))</p>
+<p>Number of times your coupons were used: @Model.Count(c => c.ActiveCouponInfo.UserID == (int)Context.Session.GetInt32("UserID") )</p>
+
+

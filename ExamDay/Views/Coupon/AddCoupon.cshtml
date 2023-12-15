@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "All Coupons";
+}
+@model Coupon
+
+<div>
+    <p><a asp-action="ShowCoupons" asp-controller="Coupon">Coupon Clipper</a> | Add Coupon | <a asp-action="ShowAccount" asp-controller="User">Account Info</a> </p>
+    <p> <a asp-action="Logout" asp-controller="User">Logout</a></p>
+</div>
+<h1> Add A Coupon </h1>
+<form asp-action="NewCoupon" asp-controller="Coupon" method="post">
+    <div>
+        <label asp-for="CouponCode"></label>
+        <span asp-validation-for="CouponCode" class="text-danger"></span>
+        <input asp-for="CouponCode">
+    </div>
+    <div>
+        <label asp-for="CouponSite"></label>
+        <span asp-validation-for="CouponSite" class="text-danger"></span>
+        <input asp-for="CouponSite">
+    </div>
+    <div>
+        <label asp-for="CouponDesc"></label>
+        <span asp-validation-for="CouponDesc" class="text-danger"></span>
+        <input asp-for="CouponDesc">
+    </div>
+    <input type="submit" value="Add Coupon">
+</form>

@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Coupon Clipper</h1>
+    <div class="d-flex justify-content-evenly">
+        <div class="border rounded-lg shadow p-4 mb-4 bg-white">
+            @await Html.PartialAsync("../Home/_Registration",new User())
+        </div>
+        <div class="border rounded-lg shadow p-4 mb-4 bg-white">
+            @await Html.PartialAsync("../Home/_Login",new LoginUser())
+        </div>
+
+    </div>
+</div>

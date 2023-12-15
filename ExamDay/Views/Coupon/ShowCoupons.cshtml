@@ -1,0 +1,54 @@
+@{
+    ViewData["Title"] = "All Coupons";
+}
+@model List<Coupon>
+
+<div>
+    <p><a asp-action="ShowCoupons" asp-controller="Coupon">Coupon Clipper</a> | <a asp-action="AddCoupon" asp-controller="Coupon">Add Coupon</a> | <a asp-action="ShowAccount" asp-controller="User">Account Info</a> </p>
+    <p> <a asp-action="Logout" asp-controller="User">Logout</a></p>
+</div>
+<div>
+    <h1>Welcome @Context.Session.GetString("UserName")</h1>
+</div>
+<div class="d-flex">
+@foreach (Coupon c in Model)
+{
+    bool isUsed = c.CouponsUsedBy.Any(c => c.UserID == (int)Context.Session.GetInt32("UserID"));
+
+    <div class="border rounded-lg shadow p-4 mb-4 bg-white m-3">
+        <h3>@c.CouponCode</h3>
+        <p>Use at: @c.CouponSite</p>
+        <p>@c.CouponDesc</p>
+        @if( @c.CouponsUsedBy.Count() > 0 )
+        {
+            <p>@c.CouponsUsedBy.Count() people have used this coupon</p>
+        }
+        @if(c.UserID == (int)Context.Session.GetInt32("UserID"))
+        {
+            <p>You posted this</p>
+        }
+        else
+        {
+            if (isUsed)
+            {
+                <p>you used this</p>
+            }
+            else
+            {
+                <p><a asp-action="UseCoupon" asp-controller="Coupon" asp-route-couponID=@c.CouponID>Use This Coupon</a></p>
+            }
+        }
+
+        <p><a asp-action="MarkExpired" asp-controller="Coupon" asp-route-couponID=@c.CouponID>Mark Coupon as Expired</a></p>
+        @if( c.ExpiredCoupons.Count() > 0 )
+        {
+            <p>@c.ExpiredCoupons.Count() people have marked this as expired.</p>
+        }
+        @if(c.ExpiredCoupons.Any(u => u.UserID == (int)Context.Session.GetInt32("UserID")))
+        {
+            <p> You marked this as expired</p>
+        }
+
+    </div>
+}
+</div>

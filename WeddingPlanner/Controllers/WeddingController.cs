@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WeddingPlanner.Controllers;
 
+[SessionCheck]
 public class WeddingController : Controller
 {
     private readonly ILogger<WeddingController> _logger;
@@ -16,7 +17,6 @@ public class WeddingController : Controller
         _context = context;
     }
 
-    // [SessionCheck]
     [HttpGet("weddings")]
     public IActionResult ShowWeddings()
     {
@@ -27,14 +27,12 @@ public class WeddingController : Controller
         return View(WeddingList);
     }
 
-    // [SessionCheck]
     [HttpGet("weddings/new")]
     public IActionResult AddWedding()
     {
         return View();
     }
 
-    // [SessionCheck]
     [HttpPost("weddings/create")]
     public IActionResult MakeWedding(Wedding newWedding)
     {
@@ -51,7 +49,6 @@ public class WeddingController : Controller
         }
     }
 
-    // [SessionCheck]
     [HttpGet("weddings/{weddingID}")]
     public IActionResult OneWedding(int weddingID)
     {
@@ -65,7 +62,6 @@ public class WeddingController : Controller
         return View("OneWedding", WeddingToShow);
     }
 
-    // [SessionCheck]
     [HttpPost("weddings/{weddingID}/delete")]
     public IActionResult DeleteWedding(int weddingID)
     {
@@ -80,7 +76,6 @@ public class WeddingController : Controller
         return RedirectToAction("ShowWeddings", "Wedding");
     }
 
-    // [SessionCheck]
     [HttpPost("weddings/{weddingID}/toggleRSVP")]
     public IActionResult ToggleRSVP(int weddingID)
     {

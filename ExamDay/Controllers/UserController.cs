@@ -1,0 +1,93 @@
+using ExamDay.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace ExamDay.Controllers;
+
+public class UserController : Controller
+{
+    private readonly ILogger<UserController> _logger;
+    private readonly MyContext _context ;
+
+    public UserController(ILogger<UserController> logger, MyContext context)
+    {
+        _logger = logger;
+        _context = context;
+    }
+
+    [HttpPost("users/create")]
+    public IActionResult Register(User NewUser)
+    {
+        if(ModelState.IsValid)
+        {
+            PasswordHasher<User> Hasher = new PasswordHasher<User>();
+            NewUser.Password = Hasher.HashPassword(NewUser,NewUser.Password);
+            _context.Add(NewUser);
+            _context.SaveChanges();
+            HttpContext.Session.SetInt32("UserID", NewUser.UserID);
+            HttpContext.Session.SetString("UserName",NewUser.UserName);
+            HttpContext.Session.SetString("UserEmail",NewUser.EmailAddr);
+            // return View("../Wedding/Weddings");
+            return RedirectToAction("ShowCoupons","Coupon");
+        }
+        else
+        {
+            return View("../Home/Index");
+        }
+    }
+
+    [HttpPost("users/login")]
+    public IActionResult Login(LoginUser userLogin)
+    {
+        if(ModelState.IsValid)
+        {
+            User? userInDB = _context.Users.FirstOrDefault(u => u.EmailAddr == userLogin.LoginEmail);
+            if (userInDB == null)
+            {
+                ModelState.AddModelError("Email", "Invalid Email/Password");
+                return View("../Home/Index");
+            }
+            //we have validated that this user exists.  now to check their password
+            PasswordHasher<LoginUser> hasher = new PasswordHasher<LoginUser>();
+            var result = hasher.VerifyHashedPassword(userLogin, userInDB.Password, userLogin.LoginPassword);
+            if (result == 0)
+            {
+                ModelState.AddModelError("Email", "Invalid Email/Password");
+                return View("../Home/Index");
+            }
+            HttpContext.Session.SetInt32("UserID", userInDB.UserID);
+            HttpContext.Session.SetString("UserName",userInDB.UserName);
+            HttpContext.Session.SetString("UserEmail",userInDB.EmailAddr);
+            return RedirectToAction("ShowCoupons", "Coupon");
+        }
+        else
+        {
+            return View("../Home/Index");
+        }
+    }
+
+    // [HttpPost("logout")]
+    public IActionResult Logout()
+    {
+        HttpContext.Session.Clear();
+        return RedirectToAction("Index", "Home");
+    }
+
+    [HttpGet("account")]
+    public IActionResult ShowAccount()
+    {
+        // List<Coupon> AccountInfo = _context.Coupons
+        //                                     .Include(ac => ac.CouponsUsedBy)
+        //                                     .ThenInclude()
+        //                                     .ToList();
+        List<ActiveUserCoupon> AccountSummary = _context.ActiveUserCoupons
+                                                .Include(sb => sb.ActiveCouponInfo)
+                                                .ToList();
+        // User? AccountSummary = _context.Users
+        //                         .Include(u => u.SubmittedCoupons)
+        //                         .ThenInclude(c => c.CouponUsedBy)
+        //                         .FirstOrDefault(u => u.UserID == (int)HttpContext.Session.GetInt32("UserID"));
+        return View(AccountSummary);
+    }
+}
